@@ -41,3 +41,45 @@
   border-radius: 10px;
   font-weight: bold;
 }
+/* CONTACT SECTION */
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+}
+
+.contact p {
+  line-height: 1.8;
+}
+
+.contact-info {
+  margin: 20px 0;
+}
+
+.contact-buttons {
+  margin-top: 25px;
+}
+
+.call-btn,
+.whatsapp-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.call-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+}
