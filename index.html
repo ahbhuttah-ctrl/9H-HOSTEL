@@ -137,3 +137,39 @@
 </section>
 
 <!-- CONTACT SECTION END -->
+<script>
+document.getElementById("admissionForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let roll = document.getElementById("roll").value;
+  let university = document.getElementById("university").value;
+  let year = document.getElementById("year").value;
+  let status = document.getElementById("status").value;
+  let job = document.getElementById("job").value;
+  let room = document.getElementById("room").value;
+  let date = document.getElementById("date").value;
+  let message = document.getElementById("message").value;
+
+  let whatsappMessage =
+`🏠 New Admission Request - 9H Hostel
+
+👤 Name: ${name}
+📞 Phone: ${phone}
+🎓 Roll No: ${roll}
+🏫 University: ${university}
+📚 Year: ${year}
+👨‍🎓 Status: ${status}
+💼 Job: ${job}
+🛏️ Room: ${room}
+📅 Date: ${date}
+💬 Message: ${message}`;
+
+  let whatsappNumber = "923343133799"; // you can change later
+
+  let url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(whatsappMessage);
+
+  window.open(url, "_blank");
+});
+</script>
