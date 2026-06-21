@@ -137,6 +137,50 @@
 </section>
 
 <!-- CONTACT SECTION END -->
+<!-- ADMISSION SECTION START -->
+
+<section id="admission" class="admission">
+
+  <h2>Admission Form</h2>
+
+  <form id="admissionForm">
+
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <input type="text" id="roll" placeholder="Roll Number">
+    <input type="text" id="university" placeholder="University Name" required>
+
+    <select id="year" required>
+      <option value="">Select Year</option>
+      <option>1st Year</option>
+      <option>2nd Year</option>
+      <option>3rd Year</option>
+    </select>
+
+    <select id="status" required>
+      <option value="">Student / Job Holder</option>
+      <option>Student</option>
+      <option>Job Holder</option>
+    </select>
+
+    <input type="text" id="job" placeholder="Job Details">
+
+    <select id="room" required>
+      <option>2 Bed Room</option>
+      <option>3 Bed Room</option>
+    </select>
+
+    <input type="date" id="date">
+
+    <textarea id="message" placeholder="Message"></textarea>
+
+    <button type="submit">Send on WhatsApp</button>
+
+  </form>
+
+</section>
+
+<!-- ADMISSION SECTION END -->
 <script>
 document.getElementById("admissionForm").addEventListener("submit", function(e) {
   e.preventDefault();
