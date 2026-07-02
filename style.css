@@ -129,4 +129,29 @@
 .menu tr:hover {
     background-color: #dbeafe;
 }
+/* ===== FOOTER ===== */
+
+.footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cccccc;
+}
 
