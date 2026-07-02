@@ -132,83 +132,68 @@
 </section>
 
 <!-- CONTACT SECTION END -->
-<!-- ADMISSION SECTION START -->
+<!-- WEEKLY MEAL MENU SECTION START -->
 
-<section id="admission" class="admission">
+<section id="menu" class="menu">
 
-  <h2>Admission Form</h2>
+  <h2>Weekly Meal Menu</h2>
+  <p>Healthy and delicious meals are served every day.</p>
 
-  <form id="admissionForm">
+  <div class="menu-table">
 
-    <input type="text" id="name" placeholder="Full Name" required>
-    <input type="tel" id="phone" placeholder="Phone Number" required>
-    <input type="text" id="roll" placeholder="Roll Number">
-    <input type="text" id="university" placeholder="University Name" required>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Breakfast</th>
+        <th>Dinner</th>
+      </tr>
 
-    <select id="year" required>
-      <option value="">Select Year</option>
-      <option>1st Year</option>
-      <option>2nd Year</option>
-      <option>3rd Year</option>
-    </select>
+      <tr>
+        <td>Saturday</td>
+        <td>Egg & Onion</td>
+        <td>Black Lentils (Dal Mash)</td>
+      </tr>
 
-    <select id="status" required>
-      <option value="">Student / Job Holder</option>
-      <option>Student</option>
-      <option>Job Holder</option>
-    </select>
+      <tr>
+        <td>Sunday</td>
+        <td>Aloo Paratha</td>
+        <td>Chicken Biryani</td>
+      </tr>
 
-    <input type="text" id="job" placeholder="Job Details">
+      <tr>
+        <td>Monday</td>
+        <td>Omelette</td>
+        <td>Seasonal Vegetable Curry</td>
+      </tr>
 
-    <select id="room" required>
-      <option>2 Bed Room</option>
-      <option>3 Bed Room</option>
-    </select>
+      <tr>
+        <td>Tuesday</td>
+        <td>Aloo Bhujia</td>
+        <td>Aloo Pulao</td>
+      </tr>
 
-    <input type="date" id="date">
+      <tr>
+        <td>Wednesday</td>
+        <td>Egg & Onion</td>
+        <td>Chicken Karahi</td>
+      </tr>
 
-    <textarea id="message" placeholder="Message"></textarea>
+      <tr>
+        <td>Thursday</td>
+        <td>Aloo Bhujia</td>
+        <td>Aloo Biryani</td>
+      </tr>
 
-    <button type="submit">Send on WhatsApp</button>
+      <tr>
+        <td>Friday</td>
+        <td>Chana (Chickpeas)</td>
+        <td>Haleem</td>
+      </tr>
 
-  </form>
+    </table>
+
+  </div>
 
 </section>
 
-<!-- ADMISSION SECTION END -->
-<script>
-document.getElementById("admissionForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let roll = document.getElementById("roll").value;
-  let university = document.getElementById("university").value;
-  let year = document.getElementById("year").value;
-  let status = document.getElementById("status").value;
-  let job = document.getElementById("job").value;
-  let room = document.getElementById("room").value;
-  let date = document.getElementById("date").value;
-  let message = document.getElementById("message").value;
-
-  let whatsappMessage =
-`🏠 New Admission Request - 9H Hostel
-
-👤 Name: ${name}
-📞 Phone: ${phone}
-🎓 Roll No: ${roll}
-🏫 University: ${university}
-📚 Year: ${year}
-👨‍🎓 Status: ${status}
-💼 Job: ${job}
-🛏️ Room: ${room}
-📅 Date: ${date}
-💬 Message: ${message}`;
-
-  let whatsappNumber = "923343133799"; // you can change later
-
-  let url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(whatsappMessage);
-
-  window.open(url, "_blank");
-});
-</script>
+<!-- WEEKLY MEAL MENU SECTION END -->
