@@ -129,35 +129,30 @@
 .menu tr:hover {
     background-color: #dbeafe;
 
-/* ===== PROFESSIONAL FOOTER ===== */
+/* ===== GOOGLE MAPS ===== */
 
-.footer {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: #ffffff;
+.location {
+    padding: 60px 20px;
     text-align: center;
-    padding: 50px 20px;
-    margin-top: 50px;
+    background: #f8f9fa;
 }
 
-.footer h2 {
+.location h2 {
     font-size: 34px;
-    color: #38bdf8;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    color: #0b5ed7;
 }
 
-.footer p {
-    font-size: 17px;
-    color: #e5e7eb;
-    line-height: 1.8;
-    margin: 8px 0;
+.location p {
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 18px;
 }
 
-.footer .copyright {
-    margin-top: 25px;
-    padding-top: 15px;
-    border-top: 1px solid #475569;
-    color: #94a3b8;
-    font-size: 15px;
+.location iframe {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
-
-
+ 
