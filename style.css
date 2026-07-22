@@ -56,6 +56,12 @@
   padding: 20px;
   border-radius: 10px;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
 }
 /* CONTACT SECTION */
 
